@@ -10,6 +10,16 @@ public class AddressEntry {
     private String telephone;
     private String zip;
     private String phone;
+    /**
+     * @param firstName first name
+     * @param lastName last name
+     * @param street street name
+     * @param city city name
+     * @param state state
+     * @param email email address
+     * @param telephone telephone number
+     * @param zip zip code
+     */
 
     public AddressEntry(String firstName, String lastName, String city, String email, String state, String street, String telephone, String zip) {
         this.firstName = firstName;
@@ -29,7 +39,7 @@ public class AddressEntry {
         city = "Hayward";
         state = "CA";
         zip = "94544";
-        phone = "1234567890";
+        telephone = "1234567890";
         email = "123.com";
     }
 

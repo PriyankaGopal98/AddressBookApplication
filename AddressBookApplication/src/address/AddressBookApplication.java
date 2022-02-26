@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 class AddressBookApplication {
 
-    /** @param {string} args      an array of sequence of characters */
+    /** @param {string}  an array  characters */
     public static void main(String[] args) throws IOException {
 
         //Create a new instance of AddressBook()
