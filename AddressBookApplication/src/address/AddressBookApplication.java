@@ -14,7 +14,8 @@ class AddressBookApplication {
     public static void main(String[] args) throws IOException {
 
         //Create a new instance of AddressBook()
-        AddressBook ab = new AddressBook();
+        AddressBook ab;
+        ab = new AddressBook();
 
         //Prompting menu
         char choice = Menu.prompt_Menu(System.in);
@@ -51,7 +52,7 @@ class AddressBookApplication {
 
     }
 
-    private static void removeEntry(AddressBook ab) {
+    public static void removeEntry(AddressBook ab) {
 
     }
 
@@ -72,7 +73,7 @@ class AddressBookApplication {
         String street;
         String city;
         String state;
-        int zip;
+        String zip;
         String phone;
         String email;
 
@@ -91,11 +92,11 @@ class AddressBookApplication {
         state = Menu.prompt_State(System.in);
         entry.setState(state);
 
-        zip = Integer.parseInt(Menu.prompt_Zip(System.in));
+        zip = (Menu.prompt_Zip(System.in));
         entry.setZip(String.valueOf(zip));
 
-        phone = Menu.prompt_Phone(System.in);
-        entry.setPhone(phone);
+        phone = Menu.prompt_TelePhone(System.in);
+        entry.setTelephone(phone);
 
         email = Menu.prompt_Email(System.in);
         entry.setEmail(email);
@@ -105,9 +106,12 @@ class AddressBookApplication {
 
     }
 
+
     public static void initAddressBookExercise(AddressBook ab){
-        AddressEntry a = new AddressEntry("Priyanka", "Gopal", "hayward", "123.com", "Ca", "Rochelle", "1234567890", "94544");
-        ab.getAddressEntryList().add(a);
+        AddressEntry a1 = new AddressEntry("Priyanka", "Gopal", "hayward", "123.com", "Ca", "Rochelle", "1234567890", "94544");
+        AddressEntry a2 = new AddressEntry("Sheena", "Gounder", "hayward", "123.com", "Ca", "Rochelle", "1234567890", "94544");
+        ab.getAddressEntryList().add(a1);
+        ab.getAddressEntryList().add(a2);
 
 
     }
