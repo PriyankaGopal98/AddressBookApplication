@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
-public class AddressBook{
+public class AddressBook {
     private List<AddressEntry> addressEntryList;
     private AddressEntry entry;
 
